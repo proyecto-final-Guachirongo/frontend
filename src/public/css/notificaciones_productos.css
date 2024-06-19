@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(../img/burbujas.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Content principal */
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr 8fr ;
+}
+
+/* Encabezado */
+.barra-principal{
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 4fr 2fr;
+    grid-template-rows: 1fr ;
+    border-bottom: solid #F2CF63 2px;
+}
+
+/* Icono de busqueda */
+.lupa{
+    width: 25px;
+}
+
+/* barra de busqueda */
+.barra-busqueda input[type="text"] {
+    flex: 2;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    
+}
+
+/* Contenedores de: foto de perfil, barra de busqueda y logo de busqueda 'lupa' */
+.img-user, .barra-busqueda, .logo-bus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+
+/* Posicion del logo */
+.logo-bus{
+    display: flex;
+    justify-content: end;
+}
+
+/* Titulos: titulo principla y nombre del usuario */
+.nom-page, .nom-user{
+    color: rgb(255, 255, 255);
+    font-size: 29px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+/* Titulo principla y boton */
+.barra-secundaria{
+    width: calc(100% - 4px);
+    height: 100%;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #f2ce6384;
+    display: grid;
+    grid-template-columns: 2fr 4fr ;
+    grid-template-rows: 1fr ;
+    border: solid #F2CF63 2px;
+}
+
+/* DIV del Boton 'mi perfil' */
+.btn-perfil{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* quitar estilos predeterminadols del Boton 'mi perfil' */
+a{
+    text-decoration: none;
+    background: none;
+    padding: 0 ;
+}
+
+/* Boton 'mi perfil' */
+.btn-perfil a{
+    color: white;
+    border-left: solid white 3px;
+    border-right: solid white 3px;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 5px;
+}
+
+/* Boton 'mi perfil' al pasar el cursor */
+.btn-perfil a:hover{
+    transition: 400ms;
+    border-left: solid #F2CF63 4px;
+    border-right: solid #F2CF63 4px;
+    text-decoration: none;
+    font-size: 27px;
+}
+
+/* Contenedor de la tabla */
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tabla */
+table {
+    width: 75%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.508);
+}
+
+/* Filas de la tabla */
+td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    text-align: center;
+    color: white;
+
+}
+
+/* Primera fila de la tabla */
+.first{
+    color: #000000;
+    background-color: #F2CF63; 
+    font-weight: bold;
+    font-size: 23px;
+}
+
+/* 'Ver Producto */
+a {
+    color: #F27244; /* Color del enlace azul */
+    text-decoration: none; /* Sin subrayado para el enlace */
+}
+
+/* 'Ver pñroducto' al pasar el cursor */
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse sobre el enlace */
+}

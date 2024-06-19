@@ -6,8 +6,16 @@
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proyecto-final-Guachirongo/frontend.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/proyecto-final-Guachirongo/frontend/issues"
+  },
+  "homepage": "https://github.com/proyecto-final-Guachirongo/frontend#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",

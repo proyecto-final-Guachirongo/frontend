@@ -1,0 +1,167 @@
+*{
+    padding: 0px;
+    margin: 0px;   
+}
+body{
+    background-image: url(../img/burbujas.jpg);
+    font-family: 'Poppins', sans-serif;
+    overflow-X: hidden;
+}
+/* Contenedor principal */
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 5fr;
+}
+
+/* ancho y alto de las grid */
+.barra-principal, .barra-p, .barra-s, .barra-half{
+    width: 100%;
+    height: 100%;
+}
+
+/* Encabezado */
+.barra-principal{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns:1fr 1fr 4fr 1fr;
+    grid-template-rows: 1fr ;
+}
+
+/* foto del usuario */
+.logo-user, img{
+    width: 65px;
+}
+
+/* Nombre del usuario */
+.nom-user{
+    display: flex;
+    align-items: center;
+}
+
+/*  Estilos para el campo de búsqueda */
+.busqueda input[type="text"] {
+    flex: 2;  /* Ocupa todo el ancho disponible */
+    background-color: white;  /* Fondo transparente */
+    color: white; /* Texto blanco */
+    border-radius: 10px;
+    padding: 10px;  /* Margen interior de 10px */
+    outline: none;/* Elimina el contorno de enfoque */
+}
+
+/* foto del usuario y div de la barra de busqueda */
+.img-user, .busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* barra para el titulo de la pagina y boton  */
+.barra-p{
+    background-color: #f2ce6384;
+    border-bottom: solid #F2CF63 2px;
+    border-top: solid #F2CF63 2px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 2fr 4fr ;
+    grid-template-rows: 1fr ; 
+}
+
+/* DIV del Titulo de la pagina */
+.title{
+    margin-left: 40px;
+}
+
+/* Titulo de la pagina */
+h3{
+    font-size: 28px;
+    color: white;
+}
+
+/* DIV del Boton 'mi perfil' */
+.bt-perfil{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+/* quitar estilos predeterminadols del Boton 'mi perfil' */
+a{
+    text-decoration: none;
+    background-color: transparent ;
+    padding: 0 ;
+}
+
+/* Boton 'mi perfil' */
+.bt-perfil a{
+    color: white;
+    border-left: solid white 3px;
+    border-right: solid white 3px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Boton 'mi perfil' al pasar el cursor */
+.bt-perfil button:hover{
+    transition: 400ms;
+    border-left: solid #F2CF63 4px;
+    border-right: solid #F2CF63 4px;
+    font-size: 25px;
+}
+
+/* Tipos de licores */
+.barra-s{
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr;   
+}
+
+/* Nombre dl usuario y los licores */
+.nom-user, .li{
+    font-size: 25px;
+    color: white;
+}
+
+/* Tpos de licores */
+.li{
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Productos registrados */
+.productos{
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    grid-column: 1;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    /* overflow-y: scroll;
+    grid-auto-flow: column; */
+}
+
+/* LICORES */
+.licores{
+    color: white;
+}
+

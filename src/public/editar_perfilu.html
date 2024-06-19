@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="./css/editar_perfil.css">
+</head>
+
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+
+        <!-- Barra Principal -->
+        <div class="barra-principal">
+            <div class="img-user"><img src="./img/user.png" alt=""></div>
+            <div class="nom-user">Victoria</div>
+            <div class="logo-bus"><img src="./img/lupa.png" alt="" class="lupa"></div>
+            <div class="barra-busqueda">
+                <input id="datos-busqueda" type="text" placeholder="Buscar...">
+                <div id="result-busqueda"></div>
+            </div>
+        </div>
+
+        <!-- Barra del Medio -->
+        <div class="barra-half">
+
+            <!-- Menu -->
+            <div class="barra-menu" id="menu">
+                <a href="./usuario.html" class="elemento" >Volver</a>
+                <a href="#" class="elemento" onclick="mostrarPrimerVentana()">Foto de Perfil</a>
+                <a href="#" class="elemento" onclick="mostrarSegundaVentana()"><center>Actualizar Datos</center></a>
+            </div>
+
+            <!-- Ventana de EDITAR PERFIL -->
+            <div class="main" id="main">
+
+                <!-- Primera Ventana de 'FOTO DE PERFIL' -->
+                <div class="first-ventana">
+                    <!-- encabezado de la primera ventana -->
+                    <div class="barra" id="barra">
+                        <!-- foto del perfil  -->
+                        <div class="user">
+                            <img src="./img/usuario.png" alt="" class="img-ventana">
+                        </div>
+                        <!-- Nombre de usuario -->
+                        <div class="nom-ventana">Victoria</div>
+                    </div>
+                    <!-- Contenido de la primera ventana -->
+                    <div class="contenido">
+                        Cambiar foto de Perfil
+                    </div>
+                </div>
+
+                <!-- segunda ventana 'ACTUALIZAR DATOS' -->
+                <div class="second-ventana" id="segundaVentana" >
+                    <!-- Encabezado -->
+                    <div class="barra" id="barra">
+                        <!-- foto del perfil -->
+                        <div class="user">
+                            <img src="./img/usuario.png" alt="" class="img-ventana">
+                        </div>
+                        <!-- Nom usuario -->
+                        <div class="nom-ventana">Victoria</div>
+                    </div>
+
+                    <!-- Contenido -->
+                        <div class="content-one">
+                            Correo Electónico
+                        </div>
+                        <div class="content-one">
+                            Usuario
+                        </div>
+                        <div class="content-one">
+                            Contraseña
+                        </div>
+                        <div class="content-one">
+                            Documento de Identidad
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<script src="./js/editar_perfil.js"></script>
+</body>
+
+</html>

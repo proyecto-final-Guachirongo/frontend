@@ -1,192 +1,204 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-*
-{
-  margin: 0;
-  padding: 0;
+* {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
-}
-body 
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #000;
-}
-section 
-{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-section::before 
-{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#000,rgb(255, 153, 0),#000);
-  animation: animate 5s linear infinite;
-}
-@keyframes animate 
-{
-  0%
-  {
-    transform: translateY(-100%);
-  }
-  100%
-  {
-    transform: translateY(100%);
-  }
-}
-section span 
-{
-  position: relative;
-  display: block;
-  width: calc(6.25vw - 2px);
-  height: calc(6.25vw - 2px);
-  background: #181818;
-  z-index: 2;
-  transition: 1.5s;
-}
-section span:hover 
-{
-  background: rgb(255, 123, 0);
-  transition: 0s;
 }
 
-section .signin
-{
-  position: absolute;
-  width: 400px;
-  background: #222;  
-  z-index: 1000;
+/* Tipo de letra */
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/burbujas5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 40px;
-  border-radius: 4px;
-  box-shadow: 0 15px 35px rgba(0,0,0,9);
-}
-section .signin .content 
-{
-  position: relative;
-  width: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 40px;
 }
-section .signin .content h2 
-{
-  font-size: 2em;
-  color: rgb(0, 42, 255);
-  text-transform: uppercase;
-}
-section .signin .content .form 
-{
-  width: 100%;
+
+/* Contenedor de Login */
+.main {
+  width: 35%;
+  height: 80%;
+  border: #F2D064 2px solid;
+  border-radius: 30px;
   display: flex;
-  flex-direction: column;
-  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  background: rgba(250, 250, 250, 0.3);/* Ajuste de la transparencia */
+  backdrop-filter: blur(0.4rem);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-section .signin .content .form .inputBox
-{
-  position: relative;
-  width: 100%;
+
+/* Titulo  'Iniciar sesión */
+.titulo {
+  color: white;
+  font-size: 2.2rem;/* Ajuste de tamaño de fuente para hacerlo responsivo */
+  text-align: center;
 }
-section .signin .content .form .inputBox input 
-{
-  position: relative;
-  width: 100%;
-  background: #333;
+
+/* Primer y segundo contenedor de 'input' */
+.t-correo,
+.t-password {
+  width: 87%;
+  height: 80%;
+  margin-left: 25px;
+}
+
+/* input */
+::placeholder{
+  color: rgba(255, 255, 255, 0.733);
+  
+}
+/* inputs 'correo y contraseña' */
+.correo,
+.password {
+  width: 87%;
+  height: 70%;
+  margin-left: 25px;
+  font-size: 1.3rem;
   border: none;
-  outline: none;
-  padding: 25px 10px 7.5px;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1em;
+  border-bottom: 2px solid #F2D064;
+  background: none;
 }
-section .signin .content .form .inputBox i 
-{
-  position: absolute;
-  left: 0;
-  padding: 15px 10px;
-  font-style: normal;
-  color: #aaa;
-  transition: 0.5s;
-  pointer-events: none;
+
+
+/* 'Olvide contraseña' */
+#forgetp {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: white;
+  color: white;
+  font-size: 1.1rem;
 }
-.signin .content .form .inputBox input:focus ~ i,
-.signin .content .form .inputBox input:valid ~ i
-{
-  transform: translateY(-7.5px);
-  font-size: 0.8em;
-  color: #fff;
-}
-.signin .content .form .links 
-{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.signin .content .form .links a 
-{
-  color: #fff;
-  text-decoration: none;
-}
-.signin .content .form .links a:nth-child(2)
-{
-  color: rgb(0, 42, 255);
-  font-weight: 600;
-}
-.signin .content .form .inputBox input[type="submit"]
-{
-  padding: 10px;
-  background: rgb(0, 42, 255);
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.35em;
-  letter-spacing: 0.05em;
+
+/* Boton 'Ingresar' */
+#btn-ingresar {
+  width: 40%;
+  height: 70%;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  border-radius: 15px;
+  background-color: #F2D064;
+  border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-.signin .content .form .inputBox input[type="submit"]:hover
-{
-  padding: 10px;
-  background: #181190;
-  color: rgb(234, 229, 229);
-  font-weight: 600;
-  font-size: 1.35em;
-  letter-spacing: 0.05em;
+
+/* Boton 'Regresar' */
+#btn-regresar {
+  width: 50%;
+  height: 70%;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  border-radius: 15px;
+  background-color: #F2D064;
+  border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-input[type="submit"]:active
-{
-  opacity: 0.6;
+
+/* al pasar el cursor por los botones */
+#btn-ingresar:hover,
+#btn-regresar:hover {
+  width: 43%;
+  height: 71%;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  border-radius: 15px;
 }
-@media (max-width: 900px)
-{
-  section span 
-  {
-    width: calc(10vw - 2px);
-    height: calc(10vw - 2px);
+
+/*Para pantallas medianas */
+@media (max-width: 768px) {
+  /* Contenedor de Login */
+.main {
+  width: 50%;
+}
+
+  /* Titulo  'Iniciar sesión */
+  .titulo {
+    font-size: 1.5rem;
   }
-}
-@media (max-width: 600px)
-{
-  section span 
-  {
-    width: calc(20vw - 2px);
-    height: calc(20vw - 2px);
+
+  /* inputs 'correo y contraseña' */
+  .correo,
+  .password {
+    font-size: 0.9rem;
+    margin-left: 10px;
   }
+
+  /* 'Olvide contraseña' */
+  #forgetp {
+    font-size: 0.9rem;
+  }
+
+  /* Boton 'Ingresar' */
+#btn-ingresar {
+  width: 40%;
+  height: 70%;
+  font-size: 1rem;
+}
+
+/* Boton 'Regresar' */
+#btn-regresar {
+  width: 50%;
+  height: 70%;
+  font-size: 1rem;
+}
+  
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 480px) {
+    /* Contenedor de Login */
+.main {
+  width: 80%;
+}
+
+/* Titulo  'Iniciar sesión */
+  .titulo {
+    font-size: 1.2rem;
+  }
+
+  /* inputs 'correo y contraseña' */
+  .correo,
+  .password {
+    font-size: 0.8rem;
+    margin-left: 5px;
+  }
+
+  /* 'Olvide contraseña' */
+  #forgetp {
+    font-size: 0.8rem;
+  }
+
+   /* Boton 'Ingresar' */
+#btn-ingresar {
+  width: 40%;
+  height: 60%;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+
+/* Boton 'Regresar' */
+#btn-regresar {
+  width: 50%;
+  height: 60%;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
 }

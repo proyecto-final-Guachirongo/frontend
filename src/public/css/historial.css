@@ -1,0 +1,163 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/img/burbujas.jpg);
+    overflow-x: hidden;
+}
+
+/* Contenedor principal */
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr) 7fr;
+}
+
+/* Encabezado */
+.header {
+    width: 99%;
+    height: 90px;
+    border-bottom: 2px solid #F2CF63;
+    grid-column: span 2;
+    grid-row: 1;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* img user */
+.foto {
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+/* Nombre de Usuario */
+.nom-user{
+    color: rgb(255, 255, 255);
+    font-size: 29px;
+    margin-left: 15px;
+}
+
+/* contenedor del titulo 'historial' y el boton */
+.title-cont {
+    width: 97%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Titulo 'Historial' */
+.title {
+    color: white;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 43px;
+    flex: 1;
+}
+
+/* div del boton */
+.profile {
+    width: 120px;
+    height: 40px;
+    background-color: #f2ce6391;
+    margin-right: 100px;
+    margin-top: 20px;
+    font-size: 28px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+}
+
+/* Boton */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Al pasar el cursor por el boton */
+.profile:hover {
+    transition: 500ms;
+    padding: 8px;
+    background-color: #fafafa28;
+}
+
+/* Div de la barra de busqueda */
+.search {
+    width: 30%;
+    height: 65%;
+    background-color: #f2ce63b6;
+    grid-row: 3;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* barra de busqueda */
+.search input[type="text"] {
+    flex: 1;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+/* Estilos CSS para el placeholder */
+::placeholder {
+    color: rgba(255, 255, 255, 0.801);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* logo buscar */
+.lupa{
+    width: 30px;
+    margin-right: 15px;
+}
+
+/* Content del historial */
+.absolute-content {
+    width: 100%;
+    height: 100%;
+    grid-row: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tabla */
+.absolute-content table {
+    width: 80%;
+    border-collapse: collapse;
+    
+}
+
+/*  filas */
+.absolute-content th, .absolute-content td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Primera fila */
+.absolute-content th {
+    background-color: #F2CF63;
+}
+
+/* Filas */
+.absolute-content td{
+    background-color: white;
+}
+
+
