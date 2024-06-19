@@ -17,7 +17,7 @@
   <!-- Contenedor principal -->
   <div class="container">
     <!-- Caja principal de 'registro' -->
-    <form action="">
+    <form action="" id="register_form">
     <div class="main">
       <!-- Titulo Principal -->
       <div class="titulo"><b>Registro</b></div>
@@ -27,7 +27,7 @@
         Nombre:
       </div>
       <div class="input">
-        <input type="text" class="in" id="nombre" required>
+        <input type="text" class="in" id="nombre" >
       </div>
 
       <!-- Segundo input -->
@@ -35,7 +35,7 @@
         Apellido:
       </div>
       <div class="input">
-        <input type="text" class="in" id="apellido" required>
+        <input type="text" class="in" id="apellido" >
       </div>
 
       <!-- Tercer input -->
@@ -43,7 +43,7 @@
         Correo:
       </div>
       <div class="input">
-        <input type="email" class="in" id="correo" required>
+        <input type="email" class="in" id="correo" >
       </div>
 
       <!-- Cuarto input -->
@@ -51,7 +51,7 @@
         Cedula:
       </div>
       <div class="input">
-        <input type="number" class="in" id="cedula" required>
+        <input type="number" class="in" id="cedula" >
       </div>
 
       <!-- Quinto input -->
@@ -59,7 +59,7 @@
         <center>Fecha nacimiento:</center>
       </div>
       <div class="input">
-        <input type="date" class="in" id="fecha_nacimiento" required>
+        <input type="date" class="in" id="fecha_nacimiento" >
       </div>
 
       <!-- Sexto input -->
@@ -80,7 +80,7 @@
         Contraseña:
       </div>
       <div class="input">
-        <input type="password" class="in" id="clave" required>
+        <input type="password" class="in" id="clave" >
       </div>
 
       <!-- Términos y condiciones -->
@@ -88,14 +88,15 @@
         <p class="text-checkbox">
           Acepta términos y condiciones
         </p>
-        <input type="checkbox" id="checkbox">
+        <input type="checkbox" id="checkbox" >
       </div>
 
       <!-- Botón de registro -->
-      <button id="btn-register">Registrarse</button>
+      <button type="submit" id="btn-register">Registrarse</button>
     </form>
     </div>
   </div>
+  <script src="./js/validar.js"></script>
 </body>
 
 </html>
