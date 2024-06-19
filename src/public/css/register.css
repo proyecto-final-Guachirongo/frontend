@@ -25,8 +25,8 @@ body {
 
 /* Caja de registro */
 .main {
-  width: 37%;
-  height: 87%;
+  width: 35vw;
+  height: 80vh;
   border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;

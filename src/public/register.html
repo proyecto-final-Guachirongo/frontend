@@ -17,6 +17,7 @@
   <!-- Contenedor principal -->
   <div class="container">
     <!-- Caja principal de 'registro' -->
+    <form action="">
     <div class="main">
       <!-- Titulo Principal -->
       <div class="titulo"><b>Registro</b></div>
@@ -26,7 +27,7 @@
         Nombre:
       </div>
       <div class="input">
-        <input type="text" class="in" required>
+        <input type="text" class="in" id="nombre" required>
       </div>
 
       <!-- Segundo input -->
@@ -34,7 +35,7 @@
         Apellido:
       </div>
       <div class="input">
-        <input type="text" class="in" required>
+        <input type="text" class="in" id="apellido" required>
       </div>
 
       <!-- Tercer input -->
@@ -42,7 +43,7 @@
         Correo:
       </div>
       <div class="input">
-        <input type="email" class="in" required>
+        <input type="email" class="in" id="correo" required>
       </div>
 
       <!-- Cuarto input -->
@@ -50,7 +51,7 @@
         Cedula:
       </div>
       <div class="input">
-        <input type="number" class="in" required>
+        <input type="number" class="in" id="cedula" required>
       </div>
 
       <!-- Quinto input -->
@@ -58,7 +59,7 @@
         <center>Fecha nacimiento:</center>
       </div>
       <div class="input">
-        <input type="date" class="in" required>
+        <input type="date" class="in" id="fecha_nacimiento" required>
       </div>
 
       <!-- Sexto input -->
@@ -67,7 +68,7 @@
       </div>
       <div class="input">
         <!-- Opciones de 'sexo' -->
-        <select class="in">
+        <select class="in" id="sexo">
           <option value=""></option>
           <option value="Masculino">Masculino</option>
           <option value="Femenino">Femenino</option>
@@ -79,7 +80,7 @@
         Contraseña:
       </div>
       <div class="input">
-        <input type="password" class="in" required>
+        <input type="password" class="in" id="clave" required>
       </div>
 
       <!-- Términos y condiciones -->
@@ -92,6 +93,7 @@
 
       <!-- Botón de registro -->
       <button id="btn-register">Registrarse</button>
+    </form>
     </div>
   </div>
 </body>

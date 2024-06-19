@@ -85,8 +85,8 @@ a {
 
 /* Al pasar el cursor por el boton */
 .profile:hover {
-    transition: 500ms;
-    padding: 8px;
+    transition: 50ms;
+    padding: 2px;
     background-color: #fafafa28;
 }
 

@@ -12,28 +12,32 @@
   <!-- Contenedor principal -->
   <div class="container">
     <!-- Contenedor del login -->
+    <form action="" id="form_login">
     <div class="main">
+
+        <div class="titulo"><b>Iniciar Sesión</b></div>
+  
+        <!-- Primer input 'correo'-->
+        <div class="t-correo">
+          <input type="text" class="correo" placeholder="Correo" required>
+        </div>
+  
+        <!-- Segundo input 'contraseña' -->
+        <div class="t-password">
+          <input type="password" class="password" placeholder="Contraseña" required>
+        </div>
+  
+        <!-- Link de 'olvide mi contraseña' -->
+        <a id="forgetp" href="/password.html"> <b>Olvide mi contraseña</b> </a>
+  
+        <!-- Boton 'Ingresar' -->
+        <button id="btn-ingresar"> <b>Ingresar</b></button>
+  
+        <!-- Boton 'Regresar' -->
+        <button id="btn-regresar" onclick="backlogin();"> <b>Regresar</b> </button>
+
+      </form>
       <!-- Titulo -->
-      <div class="titulo"><b>Iniciar Sesión</b></div>
-
-      <!-- Primer input 'correo'-->
-      <div class="t-correo">
-        <input type="text" class="correo" placeholder="Correo" required>
-      </div>
-
-      <!-- Segundo input 'contraseña' -->
-      <div class="t-password">
-        <input type="password" class="password" placeholder="Contraseña" required>
-      </div>
-
-      <!-- Link de 'olvide mi contraseña' -->
-      <a id="forgetp" href="/password.html"> <b>Olvide mi contraseña</b> </a>
-
-      <!-- Boton 'Ingresar' -->
-      <button id="btn-ingresar"> <b>Ingresar</b></button>
-
-      <!-- Boton 'Regresar' -->
-      <button id="btn-regresar" onclick="backlogin();"> <b>Regresar</b> </button>
     </div>
   </div>
   <script src="/js/regresar.js"></script>

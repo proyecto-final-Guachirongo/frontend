@@ -26,8 +26,8 @@ body {
 
 /* Contenedor de Login */
 .main {
-  width: 35%;
-  height: 80%;
+  width: 30vw;
+  height: 60vh;
   border: #F2D064 2px solid;
   border-radius: 30px;
   display: flex;
@@ -84,6 +84,16 @@ body {
   font-size: 1.1rem;
 }
 
+#forgetp:hover {
+  transition: 500ms;
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: white;
+  color: rgb(148, 145, 145);
+  font-size: 1.2rem;
+}
+
 /* Boton 'Ingresar' */
 #btn-ingresar {
   width: 40%;
@@ -100,7 +110,7 @@ body {
 
 /* Boton 'Regresar' */
 #btn-regresar {
-  width: 50%;
+  width: 40%;
   height: 70%;
   margin: auto;
   color: rgb(0, 0, 0);
@@ -115,10 +125,10 @@ body {
 /* al pasar el cursor por los botones */
 #btn-ingresar:hover,
 #btn-regresar:hover {
-  width: 43%;
-  height: 71%;
+  width: 40%;
+  height: 65%;
   color: rgb(255, 255, 255);
-  font-size: 26px;
+  font-size: 20px;
   border-radius: 15px;
 }
 
